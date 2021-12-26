@@ -24,7 +24,7 @@ class Game {
   void startGame() {
     prepareGame();
 
-  print(_answer);
+ // print(_answer);
     while(_counter < maxRandom) {
       bool isCorrectInput = _inputNumber();
       if(isCorrectInput) {
