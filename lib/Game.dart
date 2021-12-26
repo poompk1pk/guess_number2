@@ -38,12 +38,12 @@ class Game {
   }
   bool playAgain() {
     stdout.write('Play again? (Y/N): ');
-    var isY = stdin.readLineSync() ;
+    var isY = stdin.readLineSync()! ;
 
 
-    if(isY == 'Y') {
+    if(isY.toUpperCase() == 'Y') {
       return true;
-    } else if(isY == 'N') {
+    } else if(isY.toUpperCase() == 'N') {
       return false;
     }
 
